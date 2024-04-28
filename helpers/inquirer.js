@@ -61,12 +61,12 @@ const leerInput = async (message) => {
     },
   ];
 
-  const { desc } =  await inquirer.prompt(preguntas);
+  const { desc } =  await inquirer.prompt( preguntas );
   return desc
 };
 
 const listarLugares = async( lugares = [] )=>{
-  
+  console.log('ss');
   const opciones = lugares.map(( lugar, i )=>{
     const idx = `${i+1}.`.green
 
@@ -90,7 +90,7 @@ const listarLugares = async( lugares = [] )=>{
     }
   ]
 
-  const { id } = await inquirer.prompt(preguntas);
+  const { id } = await inquirer.prompt( preguntas );
   return id
 }
 
